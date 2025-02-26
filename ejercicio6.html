@@ -8,11 +8,20 @@
 </head>
 
 <body>
-    <h1>Formulario</h1> 
+    <h1>Formulario</h1>
     <!-- correo telefono y mensaje-->
-    <form action="https://formsubmit.co/sergio.blanco.reguera@gmail.com" method="POST"> <input type="text" id="mobile"
-            placeholder="Numero de Teléfono" name="mobile" class="form-control" pattern="^\d{9}$" required />
-        <button>Enviar</button>
+    <form action="https://formsubmit.co/sergio.blanco.reguera@gmail.com" method="POST">
+        <label for="Mail">Correo</label>
+        <input type="text" id="Mail" placeholder="Correo electrónico" name="Mail">
+        <br />
+        <label for="mobile">Teléfono</label>
+        <input type="text" id="mobile" placeholder="Numero de Teléfono" name="mobile"
+            pattern="^\d{9}$" required />
+        <br />
+        <label for="Message">Mensaje</label>
+        <input type="text" id="Message" placeholder="Mensaje" name="Message" />
+        <br />
+        <input type="submit" value="Enviar">
     </form>
 </body>
 
